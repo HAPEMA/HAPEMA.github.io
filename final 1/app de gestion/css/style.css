@@ -1,0 +1,369 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0%;
+  padding-bottom: 10px;
+  font-family: var(--fuente);
+  background-color: var(--terciario);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  padding-top: 5rem;
+}
+
+:root {
+  --primario: #080120;
+  --terciario: #2596be;
+  --hover: #edba6d;
+  --font_color: #ffff;
+  --fuente: "roboto" sans-serif;
+}
+
+/*declaraciones generales*/
+.separador {
+  margin-bottom: 6.5rem;
+}
+
+.tecnica_tlt {
+  font-weight: 900;
+
+}
+
+svg {
+  width: 30px;
+  width: 30px;
+}
+
+.svg_agregar {
+  width: 25px;
+  width: 25px;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #0056b3;
+}
+
+.h1__agregar {
+  color: var(--terciario);
+}
+
+h2 {
+  color: var(--font_color);
+}
+
+h3 {
+  font-size: 13px;
+  color: var(--font_color);
+}
+
+#descripcion,
+.descripcion {
+  color: var(--font_color);
+  margin: 10px 0px;
+}
+
+.padding {
+  padding: 0rem .5rem;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+/*declaraciones especificas visuales*/
+header,
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primario);
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* seccion de prioridades */
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  padding-left: 0px;
+  margin: 0%;
+}
+
+.prioridades {
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  background-color: var(--primario);
+  width: 148px;
+  height: 111px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 9px 17px 46px -26px rgba(0, 0, 0, 1);
+}
+
+/* seccion de metodos de estudio */
+.metodos {
+  background-color: var(--primario);
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+
+.centrar {
+  padding-top: 6rem;
+}
+
+/*hover */
+.metodos:hover,
+li:hover {
+  background-color: #3c2b74;
+}
+
+/* barra de navegacion */
+.navegacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.contenedor_bar {
+  background-color: var(--primario);
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.navegacion_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.item_tlt {
+  margin: 0px;
+  color: var(--font_color);
+  font-size: 13px;
+  font-weight: 00;
+}
+
+.agregar {
+  margin-top: 2px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--terciario);
+  border-radius: 20px;
+}
+
+/* ventana emergente de agregar tareas */
+.agregar_tarea {
+  background-color: var(--primario);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.config_tarea {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  color: var(--font_color);
+}
+
+input,
+#tipo {
+  background-color: transparent;
+  border: solid 1px var(--primario);
+  color: rgb(132, 0, 255);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 2px;
+  width: 100%;
+  height: 25px;
+  margin: 0rem 0rem 1rem;
+}
+
+::placeholder {
+  color: white;
+}
+
+select,
+#fecha {
+
+  color: white;
+}
+
+/*botones*/
+.tlt_crear {
+  background-color: var(--primario);
+  padding: 2rem 1rem .5rem;
+  text-align: center;
+}
+
+.tlt_crear {
+  color: var(--font_color);
+  font-size: 20px;
+}
+
+/*bton de volver*/
+.figura_volver{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #080120;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed ;
+  right: 0px;
+  bottom:  55px;
+}
+.icono_volver{
+  width: 25px;
+}
+/*-------------------------------------------CRONOMETRO.HTML-------------------------------------------------*/
+.body--cronometro {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.TiempoSe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.TiempoSe span {
+  font-weight: bold;
+  color: #007AFF;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.boton--cronometro {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007AFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton--cronometro:hover {
+  background-color: #0056b3;
+}
+
+.input1 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #73b2f7;
+  border-radius: 5px;
+}
+
+.input1[type="number"] {
+  width: 100px;
+}
+
+.contenedor--cronometro {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Asegurar que el contenido se ajuste en dispositivos móviles */
+@media screen and (max-width: 100vh) {
+  .body--cronometro {
+    align-items: center;
+  }
+
+  .contenedor--cronometro {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .TiempoSe span {
+    font-size: 20px;
+    /* Aumentar el tamaño de fuente para una mejor legibilidad */
+  }
+
+  .boton--cronometro {
+    padding: 15px 30px;
+    /* Aumentar el tamaño de los botones */
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  .input1 {
+    padding: 15px;
+    /* Aumentar el padding de los input */
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  .input1[type="number"] {
+    width: 150px;
+    /* Aumentar el ancho de los input numéricos */
+  }
+}

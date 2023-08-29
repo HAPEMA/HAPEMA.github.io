@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js"></script>
+    <title>Traductor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Traductor de Palabras</h1>
+        <div class="form-group">
+            <label for="wordInput">Palabra o Frase:</label>
+            <input type="text" id="wordInput" placeholder="Ingresa la palabra">
+        </div>
+        <div class="form-group">
+            <label for="languageSelect">Idioma Destino:</label>
+            <select id="languageSelect">
+                <option value="en">Inglés</option>
+
+                <!--               <option value="es">Español</option>
+                <option value="fr">Francés</option> -->
+                <!-- Agrega más opciones de idiomas según tus necesidades -->
+
+            </select>
+
+        </div>
+        <button onclick="translateWord()">Traducir</button>
+        <div id="translationResult"></div>
+    </div>
+    <div class="contenedor_volver ">
+        <div class="figura_volver padding ">
+            <a href="../principal.html"><img class="icono_volver" src="../app de gestion/img/back.svg"></a>
+        </div>
+    </div>
+</body>
+
+</html>

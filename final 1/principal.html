@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app de gestion/css/normalize.css">
+</head>
+<body>
+    <main id="main" class="">
+        <header class="navegacion">
+            <nav >
+                <a class="btn_desarrollador jello-horizontal " href="#" onclick="mostrar()">Desarrollador</a>
+            </nav>
+        </header>
+        <section class="info ">
+            <img src="img/boli tatto.png" class="scale-up-center  img_prin">
+            <h1 class="margin tracking-in-expand">SmartTasker</h1>
+            <p class="margin tracking-in-expand">Controla tus tareas y conviertelas en <br> tus logros.</p>
+        </section>
+
+        <section class="content_btn">
+            <ul class="blink-1">
+                <a class="fade-in-right" href="app de gestion/index.html" target="_blank"><li> Gestion de tareas</li></a>
+                <a class="fade-in-left" href="Gestor de contraseña epico/gestor_contraseña.html" target="_blank"><li>Gestor de contraseñas</li></a>
+                <a class="fade-in-right" href="Traductor/index.html" target="_blank"><li>Chat-bot ingles</li></a>
+            </ul>
+        </section>
+    </main>
+    <section class="emergente oculto">
+            <div class="modal_1">
+                <div class="bandera_dom">
+                    <img class="perfil_foto" src="img/perfil_harold_peralta.jpg">
+                    <img class="perfil_estrella" src="img/5 estrellas.jpg" >
+                </div>
+
+
+                <div class="info">
+                    <h1 class="nombre_dev">Harold Peralta</h1>
+                    <p class="desc_dev">Soy un programador junior apasionado 
+                        por la tecnología y el mundo de la programación,
+                        estoy en búsqueda constante de conocimiento y deseo de 
+                        aprender me han llevado a dar mis primeros pasos 
+                        en esta emocionante carrera.</p>
+                </div>
+            </div>
+            <div class="btn_sig">
+                <a class="btn_desarrollador" onclick="ocultar()">Volver</a>
+            </div>
+    </section>
+
+
+
+
+
+    <!-----------------------------------------------js de la ventana emergente en el html principal---------------------------------------->
+
+
+<script>
+        const emergente = document.querySelector(".emergente");
+        const main = document.getElementById("main");
+        function mostrar() {
+            emergente.style.display = "block";
+            main.style.display = "none";
+        }
+
+        function ocultar() {
+        main.style.display = "block";
+        emergente.style.display = "none";
+
+        }
+</script>
+</body>
+</html>

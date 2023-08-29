@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/app.js"></script>
+  <title>Temporizador</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body--cronometro" id="body--cronometro">
+  <div class="header">
+    <h1>Temporizador</h1>
+  </div>
+
+  <div class="sepaardor"></div>
+
+  <div class="contenedor--cronometro">
+
+    <div class="TiempoSe">
+      <span id="horas">00</span>
+      <span>:</span>
+      <span id="minutos">00</span>
+      <span>:</span>
+      <span id="segundos">00</span>
+    </div>
+
+    <button class="boton--cronometro" onclick="iniciotiempo()">Iniciar</button>
+    <button class="boton--cronometro" onclick="Altotiempo()">Detener</button>
+    <button class="boton--cronometro" onclick="Paratiempo()">Reiniciar</button>
+    <br>
+    <input class="input1" type="number" id="inputhoras" placeholder="Horas">
+    <input class="input1" type="number" id="inputminutos" placeholder="Minutos">
+    <input class="input1" type="number" id="inputsegundos" placeholder="Segundos">
+  
+  </div>
+
+  <section class="navegacion ">
+
+    <div class="contenedor_bar">
+
+      <div class="navegacion_item tarea">
+        <a href="../index.html">
+          <img src="../img/icons8-home.svg" alt="casa">
+          <p class="item_tlt">Home</p>
+        </a>
+      </div>
+
+      <div class="navegacion_item agregar" id="agregar">
+        <a href="../index.html" id="abrir_2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svg_agregar" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="2.0 2.0 32.0 32.0" zoomAndPan="magnify"
+            original_string_length="462">
+            <g id="__id126_slt5kfg5up">
+              <path
+                d="M31 15H21V5c0-1.657-1.343-3-3-3s-3 1.343-3 3v10H5c-1.657 0-3 1.343-3 3s1.343 3 3 3h10v10c0 1.657 1.343 3 3 3s3-1.343 3-3V21h10c1.657 0 3-1.343 3-3s-1.343-3-3-3z"
+                style="fill: #fff;" />
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="navegacion_item">
+        <a href="../paginas/cronometro.html">
+          <svg xmlns="http://www.w3.org/2000/svg" style="fill: #fff;" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="4.0 4.0 40.0 40.0" zoomAndPan="magnify"
+            style="fill: rgb(255, 255, 255);" original_string_length="564">
+            <g id="__id131_slt5kfg5up">
+              <path
+                d="M23.99 4c-11.05 0-19.99 8.95-19.99 20s8.94 20 19.99 20c11.05 0 20.01-8.95 20.01-20s-8.96-20-20.01-20zm.01 36c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"
+                style="fill: inherit;" />
+            </g>
+            <g id="__id132_slt5kfg5up">
+              <path d="M25 14h-3v12l10.49 6.3 1.51-2.46-9-5.34z" style="fill: inherit;" />
+            </g>
+          </svg>
+          <p class="item_tlt">Temporizador</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
